@@ -6,13 +6,11 @@ const newMulter = multer({
     fileFilter: (req, file, cb) => {
         let ext = path.extname(file.originalname)
         if (ext !== ".jpg" && ext !== ".jpeg" && ext !== ".png") {
-            cb(new Error("File type is not supported"),false);
-            return;
+            return cb(new Error("File type is not supported"), false);
+            
         }
-        cb(null, true);
+        return cb(null, true);
 
     },
-    
-    
 })
-module.exports=newMulter
+module.exports = newMulter

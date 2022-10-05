@@ -11,6 +11,7 @@ app.use(cors())
 
 //routers
 app.use('/',require('./routes/user'))
+app.use('/',require('./routes/userDetail'))
 //listening
 const port = process.env.PORT
 app.listen(port, () => {
