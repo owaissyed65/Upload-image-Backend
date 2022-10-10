@@ -72,6 +72,9 @@ ul li a {
 ul li a:hover {
   color: #10afff;
 }
+ul li a:focus {
+  color: #10afff;
+}
 
 .search {
   height: 100%;
