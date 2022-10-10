@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +13,176 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Utils and variable */
+:root {
+  --color-word: white
+}
+
+/* Navbar */
+header {
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  height: 75px;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+nav>.logo {
+  width: 10%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo>img {
+  border: 2px solid white;
+  width: 40px;
+  border-radius: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+
+}
+
+ul li {
+  list-style: none;
+  padding: 5px 25px 5px 15px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #10afff;
+}
+
+.search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+.search>input {
+  height: 25px;
+  width: 200px;
+  border: 2px solid red;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* SIgnup */
+.shadow {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.shadow-box {
+  height: 80%;
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px #e2e2e9, 0px 0px 30px #e2e2e9;
+  /* justify-content: center; */
+}
+
+.shadow-box,
+.shadow-box-login>h1 {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+/* input */
+.input {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-group {
+  width: 60%;
+  margin: 5px 0px 5px 0px;
+  height: 34px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 4px solid #ba8787;
+}
+
+/* button */
+div.button {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.button>button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #10afff;
+  color: white;
+}
+
+.button>button:hover {
+  background-color: #0044ff;
+
+}
+
+/* login */
+.shadow-box-login {
+  height: 50%;
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px #e2e2e9, 0px 0px 30px #e2e2e9;
+}
+
+.input-login {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.input-login-group {
+  width: 60%;
+  margin: 5px 0px 15px 0px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 4px solid #ba8787;
+}
+
+form {
+  display: inline;
+
 }
