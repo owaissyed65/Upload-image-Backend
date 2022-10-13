@@ -6,6 +6,7 @@ import Navbar from './Component/Navbar';
 import Home from './Component/Home';
 import Signup from './Component/Signup';
 import Login from './Component/Login';
+import Form from './Component/form/Form';
 function App() {
   const context = useContext(Context);
   const { hello } = context;
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home" element={< Home />} />
         <Route path="/signup" element={<Signup/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/form" element={<Form/>} />
       </Routes>
     </>
   );
