@@ -1,0 +1,73 @@
+.shadow-box-form {
+    height: 90%;
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #e2e2e9, 0px 0px 30px #e2e2e9;
+    margin-top: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.user-box {
+    /* background-color: yellow; */
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-box>.img-form {
+    position: absolute;
+    box-sizing: border-box;
+    left: 3rem;
+    top: 45px;
+}
+
+.img-form>img {
+    height: 150px;
+    border: 4px solid rgb(233, 142, 6);
+    border-radius: 4.5rem;
+
+}
+
+.user-box>.name-form {
+    /* background-color: pink; */
+    width: 60%;
+    position: absolute;
+    left: 15rem;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.name-form>span {
+    font-size: 3rem;
+    color: rgb(233, 142, 6);
+    
+}
+
+.form-navbar>ul {
+    display: flex;
+    background-color: blue;
+}
+
+.form-navbar>.unlist {
+    width: 100%;
+    height: 70px;
+}
+
+.unlist li a {
+    color: black;
+    font-size: 25px;
+}
+
+.unlist:first-child {
+    border-left: 6px solid green;
+    height: 50px;
+
+}
