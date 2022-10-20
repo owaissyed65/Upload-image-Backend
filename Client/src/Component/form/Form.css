@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&display=swap');
-:root{
-    --gray-text:rgb(163, 162, 162);
-    --light-black:rgb(36, 35, 35)
+
+:root {
+    --gray-text: rgb(163, 162, 162);
+    --light-black: rgb(36, 35, 35)
 }
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -90,7 +92,7 @@
     margin: 10px 0px 0px 5px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .headings>h2 {
@@ -98,15 +100,18 @@
     font-size: 26px;
     border-bottom: 2px solid black;
 }
-.subheading{
+
+.subheading {
     margin-top: 10px;
     margin-right: 10px;
 }
-.subheading>h5{
+
+.subheading>h5 {
     font-weight: lighter;
     color: var(--light-black);
     font-size: 20px;
 }
+
 /* Information */
 .form-child-info {
     /* background-color: blue; */
@@ -123,6 +128,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .span-1 {
     position: relative;
     top: 0.4rem;
@@ -132,4 +138,19 @@
 .span-2 {
     font-weight: light;
     color: var(--gray-text);
+}
+
+.edu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ul {
+    display: block;
+    background-color: wheat;
+    text-align: center;
+}
+.li{
+    display: block;
 }

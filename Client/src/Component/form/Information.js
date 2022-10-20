@@ -28,9 +28,22 @@ const Information = () => {
                 </div>
                 <div className="headings"><h2> Education</h2></div>
                 <div className="personal-details">
-                <div className="subheading"><h5>Intermediate</h5></div>
-
+                    <div className="subheading"><h5>Intermediate</h5></div>
+                    <div className="college edu">
+                        <span className="span-2">Govt of Islamia Science College</span>
+                        <span className="span-1 span-2">2019-2021</span></div>
+                    <div className="subheading"><h5>Bachelor of Computer Science</h5></div>
+                    <div className="uni edu">
+                        <span className="span-2">Sindh Madrassatul Islam University</span>
+                        <span className="span-1 span-2">2019-2021</span></div>
                 </div>
+                <div className="headings"><h2> Skills </h2></div>
+                <ul className='ul'>
+                    <li className='li'>React JS</li>
+                    <li className='li'>FrontEnd Coding</li>
+                    <li className='li'></li>
+                    <li className='li'></li>
+                </ul>
             </div>
         </>
     )
